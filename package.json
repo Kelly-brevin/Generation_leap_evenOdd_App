@@ -1,15 +1,11 @@
 {
-  "name": "tailwind-install",
+  "name": "leapevengen_app",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": " npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "tailwindcss": "^3.4.17"
-  }
+  "description": ""
 }

@@ -6,7 +6,53 @@
     <link rel="stylesheet" href="output.css" />
     <title>Tailwind</title>
   </head>
-  <body>
-    <p></p>
+  <body
+    class="bg-blue-300 flex justify-center h-screen items-center space-y-10 text-center"
+  >
+    <div class="bg-blue-600 rounded-md w-1/4 p-10">
+      <h2 class="mb-6 font-extrabold text-lg text-white">
+        Enter year And Select an input
+      </h2>
+      <form action="" class="form">
+        <input
+          type="number"
+          id="year"
+          placeholder="enter year"
+          class="border-2 border-slate-400 p-2 rounded-sm mb-3 w-full"
+          required
+        />
+        <br />
+        <h2 class="mb-3 text-white">Select an option</h2>
+        <select
+          name="select"
+          id="action"
+          class="border-2 border-slate-400 mb-3 w-full"
+        >
+          <option value="leapyear" id="leapResult">Leap Year</option>
+          <option value="evenOrOdd" id="evenResult">Even or odd</option>
+          <option value="generation" id="resultGen">generation</option>
+        </select>
+        <button
+          id="btn"
+          type="submit"
+          class="bg-gray-300 w-full p-2 rounded-md"
+        >
+          Check
+        </button>
+      </form>
+    </div>
+    <br /><br />
+    <div id="popup" class="bg-white rounded-md w-1/4 p-10 shadow-lg hidden">
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">RESULT</h2>
+      <p id="result" class="text-gray-600 mb-6"></p>
+      <button
+        id="closeModalButton"
+        class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 w-full"
+      >
+        close
+      </button>
+    </div>
+
+    <script type="module" src="script.js"></script>
   </body>
 </html>
